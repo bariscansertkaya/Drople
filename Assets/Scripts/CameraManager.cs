@@ -1,6 +1,7 @@
-using System;
-using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using Cinemachine;
+using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
@@ -15,9 +16,8 @@ public class CameraManager : MonoBehaviour
 
     void SetFollowCamera()
     {
-        followCam.m_Lens.OrthographicSize=Camera.main.orthographicSize;
+        if(Camera.main != null) followCam.m_Lens.OrthographicSize = Camera.main.orthographicSize;
         followCam.enabled=true;
         resolutionCam.enabled=false;
     }
-
 }

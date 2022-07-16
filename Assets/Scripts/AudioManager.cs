@@ -8,18 +8,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource score;
     [SerializeField] AudioSource death;
     [SerializeField] AudioSource win;
-    
-
-    /*public void PlaySpeedUpSound()
-    {
-        speedUp.Play();
-    }
-
-    public void StopSpeedUpSound()
-    {
-        speedUp.Stop();
-    }*/
-
     public void PlayExplosionSound()
     {
         explosion.Play();
