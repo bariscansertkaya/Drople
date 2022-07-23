@@ -46,8 +46,8 @@ public class GameOverManager : MonoBehaviour
     {
         return _score.ToString();
     }
-    
-    
+
+
     /*private void OnTriggerStayed(GameObject arg1, Collider2D arg2)
     {
         
